@@ -40,8 +40,6 @@ def developers_list(request):
         return Response(serializer.data)
 
 
-
-
 @api_view(['GET', 'PUT', 'DELETE'])
 def developer_details(request, username):
 
@@ -67,7 +65,6 @@ def developer_details(request, username):
 
 
 ##### company view api functions ####
-
 @api_view(['GET'])
 def companies_list(request):
     companies = Company.objects.all()
